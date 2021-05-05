@@ -12,6 +12,10 @@ const connect = function () {
   conn.on('connect', ()=>{
     console.log('You are connected.');
     conn.write("Name: SUP");
+    // setInterval(()=>{conn.write("Move: up")}, 50);
+    // setInterval(()=>{conn.write("Move: left")}, 150);
+    // setInterval(()=>{conn.write("Move: down")}, 250);
+    // setInterval(()=>{conn.write("Move: right")}, 350);
   });
   conn.on('data', (message)=>{
     console.log(message);
